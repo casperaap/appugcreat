@@ -1,8 +1,9 @@
 {
-  "rewrites": [
+  "version": 2,
+  "routes": [
     {
-      "source": "/:path*",
-      "destination": "https://ugcreative.ai/tooldark/:path*?via=app-proxy"
+      "src": "/(.*)",
+      "dest": "https://ugcreative.ai/tooldark/$1?via=app-proxy"
     }
   ]
 }
