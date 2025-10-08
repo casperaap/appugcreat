@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "https://ugcreative.ai/tooldark/$1" }
+    {
+      "source": "/:path*",
+      "destination": "https://ugcreative.ai/tooldark/:path*?via=app-proxy"
+    }
   ]
 }
